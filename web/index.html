@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="可视化展示和对比 AI 芯片规格参数。">
+  <meta name="color-scheme" content="light dark">
+  <title>AI 芯片规格可视化</title>
+  <script>
+    try {
+      document.documentElement.dataset.theme = localStorage.getItem("chip-theme") || "light";
+    } catch (_) {}
+  </script>
+  <link rel="stylesheet" href="assets/styles.css?v=20260816-2">
+</head>
+<body>
+  <main class="page-shell">
+    <header class="page-header">
+      <div>
+        <h1>AI 芯片规格可视化</h1>
+        <p>探索和对比 AI 加速芯片的规格参数。</p>
+      </div>
+      <div class="header-actions">
+        <span class="status"><i aria-hidden="true"></i><span id="chip-count">--</span></span>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="切换到深色模式" aria-pressed="false">
+          <span class="theme-toggle-track" aria-hidden="true"><i></i></span>
+          <span class="theme-toggle-label">深色</span>
+        </button>
+      </div>
+    </header>
+
+    <section class="workspace" aria-label="Chip specification explorer">
+      <aside class="control-card" aria-label="芯片选择">
+        <div class="card-heading">
+          <h2>芯片</h2>
+        </div>
+
+        <label class="field field-wide">
+          <span>搜索</span>
+          <input id="chip-search" type="search" placeholder="按名称或厂商筛选" autocomplete="off">
+        </label>
+
+        <div class="chip-list" id="chip-list" role="listbox" aria-label="可选芯片"></div>
+        <p class="empty-option" id="chip-list-empty" hidden>没有匹配当前筛选条件的芯片。</p>
+        <p class="list-hint">点击芯片即可加入或移出对比。</p>
+      </aside>
+
+      <section class="result-card" aria-live="polite" aria-label="芯片对比">
+        <section class="detail-panel compare-panel">
+          <div class="panel-heading">
+            <span>规格对比</span>
+            <strong>单卡指标 · 稠密算力</strong>
+          </div>
+          <div class="compare-scroll">
+            <div class="compare-grid" id="compare-grid"></div>
+          </div>
+          <p class="compare-empty" id="compare-empty" hidden>从左侧点击芯片，即可加入或移出对比。</p>
+        </section>
+      </section>
+    </section>
+  </main>
+
+  <script>
+    (() => {
+      const root = document.documentElement;
+      const toggle = document.getElementById("theme-toggle");
+      const label = toggle.querySelector(".theme-toggle-label");
+      const sync = () => {
+        const dark = root.dataset.theme === "dark";
+        toggle.setAttribute("aria-pressed", String(dark));
+        toggle.setAttribute("aria-label", dark ? "切换到浅色模式" : "切换到深色模式");
+        label.textContent = dark ? "浅色" : "深色";
+      };
+      toggle.addEventListener("click", () => {
+        root.dataset.theme = root.dataset.theme === "dark" ? "light" : "dark";
+        try { localStorage.setItem("chip-theme", root.dataset.theme); } catch (_) {}
+        sync();
+      });
+      sync();
+    })();
+  </script>
+  <script src="assets/chips.js?v=20260816-2"></script>
+  <script src="assets/script.js?v=20260816-2"></script>
+</body>
+</html>
