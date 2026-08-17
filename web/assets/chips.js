@@ -65,7 +65,7 @@
           { label: "FP8 算力", value: "4500 TFLOPS" },
           { label: "BF16 / FP16 算力", value: "2250 TFLOPS" },
           { label: "FP32 算力", value: "75 TFLOPS" },
-          { label: "显存容量", value: "288 GB HBM3e" },
+          { label: "显存容量", value: "268 GB HBM3e" },
           { label: "显存带宽", value: "8 TB/s" },
           { label: "Host2Device 带宽", value: "PCIe Gen5 128 GB/s（双向）", hint: "DGX B300 用 Intel Xeon CPU，SXM GPU 与 CPU 之间走 PCIe Gen5 x16，单向约 64 GB/s、双向合计 128 GB/s。" },
           { label: "节点内互联带宽", value: "NVLink 1.8 TB/s" },
