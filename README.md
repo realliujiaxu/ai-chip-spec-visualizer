@@ -13,12 +13,14 @@ NVIDIA H200 SXM、DGX B200、DGX B300、GB300 NVL72 和昇腾 950DT（547T 144GB
 
 ## 使用方式
 
-直接用浏览器打开 `web/index.html`，无需构建或启动服务器。
+直接用浏览器打开 `docs/index.html`，无需构建或启动服务器。
+也可以访问 GitHub Pages 在线版本：
+<https://realliujiaxu.github.io/ai-chip-spec-visualizer/>
 
 ## 目录结构
 
 ```
-web/
+docs/
   index.html          页面骨架、主题切换
   assets/
     styles.css        玻璃拟态设计变量，浅色/深色主题
@@ -28,7 +30,7 @@ web/
 
 ## 添加新芯片
 
-在 `web/assets/chips.js` 的 `chips` 数组中追加条目：
+在 `docs/assets/chips.js` 的 `chips` 数组中追加条目：
 
 - `vendor` / `name` / `tagline` / `badges`：左侧列表和详情头部的展示信息。
 - `summary`：对比表的行，每行一个 `{ label, value, hint? }`，
