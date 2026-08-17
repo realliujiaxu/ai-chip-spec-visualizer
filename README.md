@@ -15,7 +15,7 @@ NVIDIA H200 SXM、DGX B200、DGX B300、GB300 NVL72 和昇腾 950DT（547T 144GB
 
 直接用浏览器打开 `docs/index.html`，无需构建或启动服务器。
 也可以访问 GitHub Pages 在线版本：
-<https://realliujiaxu.github.io/ai-chip-spec-visualizer/>
+<https://eco-sphere.github.io/ai-chip-spec-visualizer/>
 
 ## 目录结构
 
