@@ -109,7 +109,7 @@
           { label: "显存带宽", value: "4 TB/s" },
           { label: "Host2Device 带宽", value: "PCIe 5.0 128 GB/s（双向）", hint: "昇腾 950 集成 72 Lane HiLink SerDes（18 个 X4 端口），对外提供 PCIe 5.0 x16（与灵衢 UB 共用 4 个端口），双向合计 128 GB/s。" },
           { label: "节点内互联带宽", value: "700 GB/s（双向）", hint: "节点 8 卡内每对 NPU 间互联带宽 100 GB/s（双向），总互联带宽 7 × 100 = 700 GB/s（双向）。" },
-          { label: "节点间互联带宽", value: "800 GB/s（双向）", hint: "节点间互联：8 × 100 = 800 GB/s（双向），仅限柜内互联，最大 64 卡。" }
+          { label: "节点间互联带宽", value: "600 GB/s（双向）", hint: "节点间互联：600 GB/s 为典型配置（6 × 100），最高配置 8 × 100 = 800 GB/s（双向），仅限柜内互联，最大 64 卡。" }
         ],
         source_label: "昇腾 950 NPU 架构白皮书",
         source_url: "https://public-download.obs.cn-east-2.myhuaweicloud.com/ascend/%E6%98%87%E8%85%BE950%20NPU%E6%9E%B6%E6%9E%84%E7%99%BD%E7%9A%AE%E4%B9%A6.pdf"
@@ -129,7 +129,7 @@
           { label: "显存带宽", value: "4 TB/s" },
           { label: "Host2Device 带宽", value: "PCIe 5.0 128 GB/s（双向）", hint: "昇腾 950 集成 72 Lane HiLink SerDes（18 个 X4 端口），对外提供 PCIe 5.0 x16（与灵衢 UB 共用 4 个端口），双向合计 128 GB/s。" },
           { label: "节点内互联带宽", value: "700 GB/s（双向）", hint: "节点 8 卡内每对 NPU 间互联带宽 100 GB/s（双向），总互联带宽 7 × 100 = 700 GB/s（双向）。" },
-          { label: "节点间互联带宽", value: "800 GB/s（双向）", hint: "节点间互联：8 × 100 = 800 GB/s（双向），仅限柜内互联，最大 64 卡。" }
+          { label: "节点间互联带宽", value: "600 GB/s（双向）", hint: "节点间互联：600 GB/s 为典型配置（6 × 100），最高配置 8 × 100 = 800 GB/s（双向），仅限柜内互联，最大 64 卡。" }
         ],
         source_label: "昇腾 950 NPU 架构白皮书",
         source_url: "https://public-download.obs.cn-east-2.myhuaweicloud.com/ascend/%E6%98%87%E8%85%BE950%20NPU%E6%9E%B6%E6%9E%84%E7%99%BD%E7%9A%AE%E4%B9%A6.pdf"
@@ -149,7 +149,7 @@
           { label: "显存带宽", value: "4 TB/s" },
           { label: "Host2Device 带宽", value: "PCIe 5.0 128 GB/s（双向）", hint: "昇腾 950 集成 72 Lane HiLink SerDes（18 个 X4 端口），对外提供 PCIe 5.0 x16（与灵衢 UB 共用 4 个端口），双向合计 128 GB/s。" },
           { label: "节点内互联带宽", value: "700 GB/s（双向）", hint: "节点 8 卡内每对 NPU 间互联带宽 100 GB/s（双向），总互联带宽 7 × 100 = 700 GB/s（双向）。" },
-          { label: "节点间互联带宽", value: "800 GB/s（双向）", hint: "节点间互联：8 × 100 = 800 GB/s（双向），仅限柜内互联，最大 64 卡。" }
+          { label: "节点间互联带宽", value: "600 GB/s（双向）", hint: "节点间互联：600 GB/s 为典型配置（6 × 100），最高配置 8 × 100 = 800 GB/s（双向），仅限柜内互联，最大 64 卡。" }
         ],
         source_label: "昇腾 950 NPU 架构白皮书",
         source_url: "https://public-download.obs.cn-east-2.myhuaweicloud.com/ascend/%E6%98%87%E8%85%BE950%20NPU%E6%9E%B6%E6%9E%84%E7%99%BD%E7%9A%AE%E4%B9%A6.pdf"
